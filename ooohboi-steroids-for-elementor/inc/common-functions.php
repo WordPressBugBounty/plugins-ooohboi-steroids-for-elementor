@@ -24,7 +24,7 @@ By enabling this option you acknowledge its <a href="https://greensock.com/stand
 $config_submenu = array(
     
     'type'              => 'menu', // Required, menu or metabox
-    'title'             => 'Steroids for Elementor v' . OoohBoi_Steroids::VERSION, // options panel title
+    'title'             => 'Steroids for Elementor', // options panel title
     'menu_title'        => 'Steroids for Elementor', // admin menu title
     'icon'              => SFE_DIR_URL . 'img/sfe-icon-WP-admin.png',
     'id'                => 'steroids_for_elementor',  // Required, meta box id, unique per page, to save: get_option( id )

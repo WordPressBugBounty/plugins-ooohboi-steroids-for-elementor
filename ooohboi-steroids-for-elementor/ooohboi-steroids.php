@@ -2,15 +2,15 @@
 /**
  * Plugin Name: OoohBoi Steroids for Elementor
  * Description: An awesome set of tools/options/settings that extend Elementor default/existing widgets and elements. It keeps the editor tidy, saves valuable resources and improves the workflow.
- * Version:     2.1.6
+ * Version:     2.1.7
  * Author:      OoohBoi
  * Author URI:  https://www.youtube.com/c/OoohBoi
  * Text Domain: ooohboi-steroids
- * Domain Path: /lang
- * License: GPLv3
- * Elementor tested up to: 3.17
- * Elementor Pro tested up to: 3.17
+ * License:     GPLv3
  * License URI: http://www.gnu.org/licenses/gpl-3.0
+ * Requires Plugins: elementor
+ * Elementor tested up to: 3.26
+ * Elementor Pro tested up to: 3.26
  */
 
 use Elementor\Core\Settings\Manager as SettingsManager;
@@ -33,7 +33,7 @@ final class OoohBoi_Steroids {
 	 *
 	 * @var string The plugin version.
 	 */
-	const VERSION = '2.1.6';
+	const VERSION = '2.1.7';
 
 	/**
 	 * Minimum Elementor Version
@@ -42,7 +42,7 @@ final class OoohBoi_Steroids {
 	 *
 	 * @var string Minimum Elementor version required to run the plugin.
 	 */
-	const MINIMUM_ELEMENTOR_VERSION = '3.12';
+	const MINIMUM_ELEMENTOR_VERSION = '3.20';
 
 	/**
 	 * Elementor Version for Containers
@@ -51,7 +51,7 @@ final class OoohBoi_Steroids {
 	 *
 	 * @var string Elementor version required for particular extensions to work
 	 */
-	const ELEMENTOR_VERSION_CONTAINER = '3.12';
+	const ELEMENTOR_VERSION_CONTAINER = '3.20';
 
 	/**
 	 * Minimum PHP Version
@@ -60,7 +60,7 @@ final class OoohBoi_Steroids {
 	 *
 	 * @var string Minimum PHP version required to run the plugin.
 	*/
-	const MINIMUM_PHP_VERSION = '7.2';
+	const MINIMUM_PHP_VERSION = '7.4';
 
 	/**
 	 * Plugin URL and PATH
@@ -139,23 +139,7 @@ final class OoohBoi_Steroids {
 	 */
 	
 	public function __construct() {	
-		add_action( 'init', [ $this, 'i18n' ] );
 		add_action( 'plugins_loaded', [ $this, 'init' ] );
-	}
-
-	/**
-	 * Load Textdomain
-	 *
-	 * Load plugin localization files.
-	 *
-	 * Fired by `init` action hook.
-	 *
-	 * @since 1.0.0
-	 *
-	 * @access public
-	 */
-	public function i18n() {
-		load_plugin_textdomain( 'ooohboi-steroids', FALSE, basename( dirname( __FILE__ ) ) . '/lang/' );
 	}
 
 	/**

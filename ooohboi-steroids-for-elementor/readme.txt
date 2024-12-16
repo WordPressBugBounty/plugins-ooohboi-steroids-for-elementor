@@ -2,16 +2,18 @@
 Contributors: OoohBoi, elementoraddon
 Tags: page-builder, elementor, add-on, background-overlay, vertical text, ghost elements, overlapping columns
 Donate link: https://www.paypal.me/ooohboi
-Requires at least: 5.0
-Tested up to: 6.4
-Stable tag: 2.1.6
-Requires PHP: 7.0
+Requires at least: 6.0
+Tested up to: 6.7
+Stable tag: 2.1.7
+Requires PHP: 7.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0
 
 Boost your Elementor with some fresh and yet innovative options.
 
 == Description ==
+
+*Please note that this plugin is no longer being maintained or supported; use at your own risk. While we recommend looking for an alternative, it is important to note that much of the functionality that this plugin added, has more recently been added within the native Elementor editor.*
 
 An awesome set of tools, options and settings that expand Elementor defaults. Instead of creating new Elementor Widgets, these act like an upgrade of existing options or the self-standing panels thing. 
 
@@ -34,7 +36,7 @@ An awesome set of tools, options and settings that expand Elementor defaults. In
 
 == Upgrade Notice ==
 
-2.1.0 - Beware of changes to the language file!
+Please note that this plugin is no longer being maintained or supported; use at your own risk. While we recommend looking for an alternative, it is important to note that much of the functionality that this plugin added, has more recently been added within the native Elementor editor.
 
 == Frequently Asked Questions ==
 
@@ -50,10 +52,16 @@ No, you don't. It'll work with both free version of Elementor and Elementor PRO.
 
 == Changelog == 
 
+= 2.1.7 =
+- Update: Support Swiper 8
+- Update: Remove deprecated Schemes
+- Update: Set minimum required PHP versions to 7.4
+- Update: Set minimum required Elementor versions to 3.20
+
 = 2.1.6 =
 - Fix: disappearing 'Glider' slider - thanks to Casey Haley - Bluegrass Internet Services
 - Update: 'Custom' unit support 
-- Update: replaced deprecated Elementor\Core\Schemes\Typography
+- Update: replaced deprecated Schemes
 
 = 2.1.5 = 
 - Fix: Vulnerability fix | Source WPScan : https://wpscan.com/vulnerability/ac74df9a-6fbf-4411-a501-97eba1ad1895

@@ -12,6 +12,10 @@
 
                 <div>
 
+                <p style="background-color: #ffe1e1; padding: 28px;">
+                Please note that this plugin is no longer being maintained or supported; use at your own risk. While we recommend looking for an alternative, it is important to note that much of the functionality that this plugin added, has more recently been added within the native Elementor editor.
+                </p>
+
                 <p>&nbsp;</p>
 
                 <p><strong>What's new to 2.1.6?</strong></p>
@@ -32,10 +36,6 @@
                     All of the deprecated Schemes for the Elementor 3.15 are now replaced. Be sure to keep the Elementor up to date.
                     </p>
 
-                    <p style="background-color: #ffe1e1; padding: 28px;">
-                    PLEASE support this plugin development! Think about a small monthly donation if you find it useful for your business. Even $1 from you could have a big impact on development, new features and quicker bug fixes.<br/>
-                    Thank you!
-                    </p>
                     <p>&nbsp;</p>
 
                 </div>
