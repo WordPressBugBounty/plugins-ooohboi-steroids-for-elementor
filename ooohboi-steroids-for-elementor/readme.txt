@@ -1,9 +1,10 @@
 === OoohBoi Steroids for Elementor ===
 Contributors: OoohBoi, elementoraddon
 Tags: page-builder, elementor, add-on, background-overlay, vertical text, ghost elements, overlapping columns
-Requires at least: 5.7.0
+Donate link: https://www.paypal.me/ooohboi
+Requires at least: 6.0
 Tested up to: 6.7
-Stable tag: 2.1.8
+Stable tag: 2.1.9
 Requires PHP: 7.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0
@@ -12,13 +13,11 @@ Boost your Elementor with some fresh and yet innovative options.
 
 == Description ==
 
-*Please note that this plugin is no longer being maintained or supported; use at your own risk. While we recommend looking for an alternative, it is important to note that much of the functionality that this plugin added, has more recently been added within the native Elementor editor.*
-
 An awesome set of tools, options and settings that expand Elementor defaults. Instead of creating new Elementor Widgets, these act like an upgrade of existing options or the self-standing panels thing. 
 
 == What is new? ==
 
-= Fix for the disappearing Glider slider =
+= Fix for the disappearing 'Glider' slider =
 
 - Add/remove/update preview image
 - Export and Import with preview
@@ -35,8 +34,6 @@ An awesome set of tools, options and settings that expand Elementor defaults. In
 
 == Upgrade Notice ==
 
-Please note that this plugin is no longer being maintained or supported; use at your own risk. While we recommend looking for an alternative, it is important to note that much of the functionality that this plugin added, has more recently been added within the native Elementor editor.
-
 == Frequently Asked Questions ==
 
 = How do I use OoohBoi Steroids? =
@@ -51,8 +48,11 @@ No, you don't. It'll work with both free version of Elementor and Elementor PRO.
 
 == Changelog == 
 
+= 2.1.9 =
+- Fix : Minor Bug Fixes & Performance Improvements
+
 = 2.1.8 =
-- Fix : Glider slider Compatibility with Elementor version 3.2.7
+- Fix : Glider slider Compability with Elementor versions to 3.27
 - Fix : Minor Bug Fixes & Performance Improvements
 
 = 2.1.7 =
