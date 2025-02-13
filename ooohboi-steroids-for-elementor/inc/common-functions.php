@@ -21,10 +21,10 @@ By enabling this option you acknowledge its <a href="https://greensock.com/stand
 $cdnjs_motionpath = '<p class="ob-alert">NOTE! This (MotionPath) JavaScript library is hosted by, and loaded from the <a href="https://cdnjs.com/libraries/gsap">cdnjs.com</a>. "OoohBoi - Steroids for Elementor" plugin does not include that file! 
 By enabling this option you acknowledge its <a href="https://greensock.com/standard-license/" target="_blank">terms of use</a>, and accept every responsibility - including the risk of script unavailability, vulnerability and the data loss.</p>';
 // --------------------------- E X O P I T ----- >
+
 $config_submenu = array(
-    
     'type'              => 'menu', // Required, menu or metabox
-    'title'             => 'Steroids for Elementor', // options panel title
+    'title'             => 'Ooohboi Steroids for Elementor', // options panel title
     'menu_title'        => 'Steroids for Elementor', // admin menu title
     'icon'              => SFE_DIR_URL . 'img/sfe-icon-WP-admin.png',
     'id'                => 'steroids_for_elementor',  // Required, meta box id, unique per page, to save: get_option( id )
@@ -105,7 +105,15 @@ $fields[] = array(
             'id'            => 'ob_use_overlaiz', 
             'title'			=> 'OVERLAIZ', 
             'type'			=> 'switcher',
-            'description'	=> sprintf( __( '%sAn awesome set of options for the Background Overlay element manipulation (up to Elementor 3.5.9)%s', 'ooohboi-steroids' ), '<span class="ob-option-desc">', '</span>' ), 
+            'description' => wp_kses_post(
+                sprintf(
+                    /* translators: %1$s opening span tag, %2$s closing span tag, %3$s YouTube link */
+                    __( '%1$sAn awesome set of options for the Background Overlay element manipulation (up to Elementor 3.5.9)%2$s %3$s', 'ooohboi-steroids' ),
+                    '<span class="ob-option-desc">',
+                    '</span>',
+                    '<a href="' . esc_url('https://www.youtube.com/watch?v=iMm9MI120e8') . '" target="_blank" rel="noopener noreferrer" style="white-space: nowrap;">' . esc_html__('Video Here', 'ooohboi-steroids') . '</a>'
+                )
+            ),
             'default'       => 'yes',
         ),
         array(
@@ -117,7 +125,7 @@ $fields[] = array(
                     esc_html__('%sIt allows you to style up the posts pagination in Elementor.%s %s', 'ooohboi-steroids'),
                     '<span class="ob-option-desc">',
                     '</span>',
-                    '<a href="https://www.youtube.com/watch?v=LjaU-TRZAIc" target="_blank" rel="noopener noreferrer" style="white-space: nowrap;">' . esc_html__('Video Here', 'ooohboi-steroids') . '</a>'
+                    '<a href="https://www.youtube.com/watch?v=f6YO8jMAlMc" target="_blank" rel="noopener noreferrer" style="white-space: nowrap;">' . esc_html__('Video Here', 'ooohboi-steroids') . '</a>'
                 )
             ),
             'default'       => 'yes',
@@ -166,7 +174,15 @@ $fields[] = array(
             'id'            => 'ob_use_videomasq', 
             'title'			=> 'VIDEOMASQ', 
             'type'			=> 'switcher',
-            'description'	=> sprintf( __( '%sAdd the SVG mask to the Section video background and let the video play inside any shape%s', 'ooohboi-steroids' ), '<span class="ob-option-desc">', '</span>' ),
+            'description' => wp_kses_post(
+                sprintf(
+                    /* translators: %1$s opening span tag, %2$s closing span tag, %3$s YouTube link */
+                    __( '%1$sAdd the SVG mask to the Section video background and let the video play inside any shape%2$s %3$s', 'ooohboi-steroids' ),
+                    '<span class="ob-option-desc">',
+                    '</span>',
+                    '<a href="' . esc_url('https://www.youtube.com/watch?v=6es-E_xjXSE') . '" target="_blank" rel="noopener noreferrer" style="white-space: nowrap;">' . esc_html__('Video Here', 'ooohboi-steroids') . '</a>'
+                )
+            ),
             'default'       => 'yes',
         ),
         array(
