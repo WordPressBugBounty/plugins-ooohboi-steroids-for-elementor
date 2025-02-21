@@ -17,6 +17,7 @@
                     <li>SHADOUGH - <a href="https://www.youtube.com/watch?v=biZpCZIFts8" target="_blank" rel="noopener noreferrer">Explanation Video</a></li>
                     <li>SPACERAT - <a href="https://www.youtube.com/watch?v=P8xBP3TkvDM" target="_blank" rel="noopener noreferrer">Explanation Video</a></li>
                     <li>HOVERANIMATOR - <a href="https://www.youtube.com/watch?v=uPB0W5OV0sc" target="_blank" rel="noopener noreferrer">Explanation Video</a></li>
+                    <li>COUNTERZ - <a href="https://www.youtube.com/watch?v=Q9gJ7b-tcJA" target="_blank" rel="noopener noreferrer">Explanation Video</a></li>
                 </ul>
 
                 <hr>
@@ -24,16 +25,18 @@
                 <p>
                     <strong>What's new to <?php echo OoohBoi_Steroids::VERSION; ?>?</strong>
                 </p>
-                <h3>Updated</h3>
+                <h3> Added & Updated</h3>
                 <ul>
-                    <li>Performance : Remove unused HTML & CSS</li>
+                    <li>Added : COUNTERZ Explanation Video</li>
+                    <li>Update : PAGININI Video Explanation Video</li>
                 </ul>
 
                 <h3>Fixed</h3>
                 <ul>
-                    <li>Fix : Update links for other plugins are hidden</li>
-                    <li>Fix : Glider was Breaking in the Container on the Elementor Editor Backend.</li>
-                    <li>Fix : Minor Bug Fixes & Performance Improvements</li>
+                    <li>Fix : Container Extras : Spelling Mistake.</li>
+                    <li>Fix : COUNTERZ : Align Title Not Working.</li>
+                    <li>Fix : ICOBOX : Box Shadow Not Working</li>
+                    <li>Fix : IMBOX : Content Position Not Working</li>
                 </ul>
             </div>
 
