@@ -12,9 +12,9 @@
 	display: flex !important;
 }
 
-.toplevel_page_steroids_for_elementor #e-admin-top-bar-root{
+/* .toplevel_page_steroids_for_elementor #e-admin-top-bar-root{
 	display: none !important;
-}
+} */
 
 #e-admin-top-bar-root.e-admin-top-bar--active~#wpbody #wpbody-content{
 	margin-block-start: 0px !important;
@@ -213,8 +213,7 @@ a.toplevel_page_steroids_for_elementor.wp-not-current-submenu .wp-menu-image img
 	box-shadow: none;
 	padding: 32px 20px;
 }
-.exopite-sof-wrapper.steroids_for_elementor-options .exopite-sof-nav
-{
+.exopite-sof-wrapper.steroids_for_elementor-options .exopite-sof-nav{
 	background-color: #131A24; 
 }
 
@@ -222,6 +221,13 @@ a.toplevel_page_steroids_for_elementor.wp-not-current-submenu .wp-menu-image img
 	font-size: 2.4em;
 	font-weight: 600;
 	letter-spacing: -1px;
+}
+
+@media (max-width: 700px) {
+
+	.exopite-sof-wrapper.steroids_for_elementor-options .exopite-sof-header {
+	  	display: flex;
+	}
 }
 
 /* ==== GRID SYSTEM ==== */
