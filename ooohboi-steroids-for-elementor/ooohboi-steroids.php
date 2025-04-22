@@ -2,21 +2,21 @@
 /**
  * Plugin Name: OoohBoi Steroids for Elementor
  * Description: An awesome set of tools/options/settings that extend Elementor default/existing widgets and elements. It keeps the editor tidy, saves valuable resources and improves the workflow.
- * Version:     2.1.20
+ * Version:     2.1.21
  * Author:      OoohBoi
  * Author URI:  https://www.youtube.com/c/OoohBoi
  * Text Domain: ooohboi-steroids
  * License:     GPLv3
  * License URI: http://www.gnu.org/licenses/gpl-3.0
- * Elementor tested up to: 3.27
- * Elementor Pro tested up to: 3.27
+ * Elementor tested up to: 3.28
+ * Elementor Pro tested up to: 3.28
  */
 
 use Elementor\Core\Settings\Manager as SettingsManager;
 
 defined( 'ABSPATH' ) || die(); // Exit if accessed directly.
 
-define( 'OoohBoi_VERSION', '2.1.20' );
+define( 'OoohBoi_VERSION', '2.1.21' );
 define( 'OoohBoi_FILE', __FILE__ );
 define( 'OoohBoi_URL', plugins_url( '/', __FILE__ ) );
 define( 'OoohBoi_PATH', plugin_dir_path( __FILE__ ) );
@@ -180,7 +180,12 @@ final class OoohBoi_Steroids {
 
 		// load common stuff functions
 		require plugin_dir_path( __FILE__ ) . 'inc/exopite-simple-options/exopite-simple-options-framework-class.php';
-		require plugin_dir_path( __FILE__ ) . 'inc/common-functions.php';
+		
+		add_action( 'init', 'my_plugin_init_fields' );
+		function my_plugin_init_fields() {
+			require plugin_dir_path( __FILE__ ) . 'inc/common-functions.php';
+		}
+		// require plugin_dir_path( __FILE__ ) . 'inc/common-functions.php';
 
 		// init EXOPIT ---------------------------------------------------------->
 		$ob_settings_options = get_exopite_sof_option( 'steroids_for_elementor' );
@@ -592,7 +597,7 @@ final class OoohBoi_Steroids {
 
 		$ele_is_preview = \Elementor\Plugin::$instance->preview->is_preview_mode(); 
 		
-		wp_register_script( 'ooohboi-steroids', plugins_url( 'assets/js/ooohboi-steroids.js', __FILE__ ), [ 'jquery' ], self::VERSION . '07072022', true );
+		wp_register_script( 'ooohboi-steroids', plugins_url( 'assets/js/ooohboi-steroids.js', __FILE__ ), [ 'jquery' ], self::VERSION . 'aaa', true );
 
 		// locomotive scroll
 		if( 1 === self::$sfe_lib_locomotive ) {
